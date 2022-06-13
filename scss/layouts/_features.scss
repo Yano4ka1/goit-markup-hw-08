@@ -1,0 +1,49 @@
+/* Особливості*/
+
+
+.features__list {
+    display: flex;
+}
+
+.features__item {
+     width: 270px;
+
+     &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.features__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+
+    color: var(--style-basis);
+    background-color: var(--style-button);
+    border-radius: 4px;
+}
+
+.features__img {
+    fill: currentColor;
+}
+  
+.features__name {
+    margin-bottom: 10px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    }
+
+.features__text {
+    color: var(--style-text);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    }
+

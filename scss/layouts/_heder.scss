@@ -1,0 +1,117 @@
+.header {
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    background-color: var(--style-fon-white);
+    border-bottom: 1px solid #ececec;
+}
+
+.header-container {
+    display: flex;
+}
+
+
+/* Навігація та Контакти */
+
+
+.header-navigation {
+    display: flex;
+    align-items: center;
+}
+
+.header-navigation__list {
+    display: flex;
+    align-items: center;
+   
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+     }
+
+.header-navigation__item {
+    margin-right: 50px;
+    align-items: center;
+
+    &:last-child {
+        margin-right: 0px;
+    }
+    }
+
+.header-navigation__link {
+    position: relative;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    
+    color: var(--style-basis);
+    transition: color var(--animation);
+
+    text-decoration: none;
+
+    &:hover, 
+    &:focus {
+        color: var(--style-blue);
+    }
+    }
+   
+.header-navigation__link--current {
+    color: var(--style-blue);
+}
+
+.header-navigation__link--current::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+
+    display: block;
+    width: 100%;
+    height: 4px;
+
+    background-color: var(--style-blue);
+    border-radius: 2px;
+}
+  
+.header-contacts {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    }
+  
+.header-contacts__item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.header-contacts__link {
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    align-items: center;
+
+    color: var(--style-text);
+    transition: color var(--animation), fill var(--animation);
+
+    text-decoration: none;
+
+    &:hover, &:focus {
+    color: var(--style-blue);
+    }
+    }
+
+.header-contacts__icon {
+    margin-right: 10px;
+    align-items: center;
+    fill: currentColor;
+
+    &:hover, &:focus {
+        color: var(--style-blue);
+        }
+}

@@ -1,0 +1,50 @@
+/*Футер сторінки */
+
+
+.my-adrs {
+   
+    background-color: var(--fon-titl-adr);
+    padding-top: 60px;     
+    padding-bottom: 60px; 
+} 
+
+.adrs-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+
+.adr-group{
+    width: 231px;
+}
+
+.adrs{
+    margin-bottom: 9px;
+
+    color: var(--style-fon-white);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    font-style:normal;
+    }
+
+.adrs-list:not(:last-child) {
+    margin-bottom: 9px;
+}
+    
+
+.adrs-auth {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    font-style:normal;
+    text-decoration: none;
+    transition: color var(--animation) ;
+}
+
+.adrs-auth:hover,.adrs-auth:focus {
+    color:var(--style-blue);
+}
+
