@@ -1,5 +1,12 @@
 /* Чим ми займаємось */
 
+.work {
+    display: none;
+
+    @media screen and (min-width: 1200px) {
+      display: block;  
+    }
+}
 
 .work__name {
     margin-bottom:50px;
@@ -19,7 +26,7 @@
 
 .work__item {
     position: relative;
-    z-index: 8;
+    z-index: 1;
 
     margin-right: 30px;   
 
