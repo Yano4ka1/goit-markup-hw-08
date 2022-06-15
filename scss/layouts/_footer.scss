@@ -10,29 +10,71 @@
 
 .adrs-container{
     display: flex;
-    justify-content: flex-start;
-    align-items: baseline;
+    justify-content: center;
+    flex-direction: column;
+
+    @media screen and (min-width:1200px) {
+        flex-direction: row;
+        align-items: baseline;
+    }
 }
 
+.adr-mobil {
+    margin-bottom: 60px;
+
+    @media screen and (min-width:768px) {
+        display: flex;
+        justify-content: space-around;
+        align-items: baseline;
+    }
+
+    @media screen and (min-width:1200px) {
+        margin-bottom: 0;
+        margin-right: 93px;
+    }
+}
 
 .adr-group{
-    width: 231px;
+    @media screen and (max-width:767px) {
+       margin-bottom: 60px;
+    }
 }
 
+
 .adrs{
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+    text-align: center;
 
     color: var(--style-fon-white);
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    font-style:normal;
+    font-style: normal;
+
+    @media screen and (min-width: 1200px) {
+
+        text-align: start;
+        margin-bottom: 9px;
+         }
     }
 
 .adrs-list:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 9px;
+         }
 }
     
+.footer-adrs-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width: 1200px) {
+    align-items: start;
+     }
+}
 
 .adrs-auth {
     color: rgba(255, 255, 255, 0.6);

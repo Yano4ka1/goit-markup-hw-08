@@ -6,25 +6,40 @@
 }
 
 .portfolio__list {
-   display: flex;
+@media screen and (min-width:768px) {
+    display: flex;
     flex-wrap: wrap;
     margin: -15px; 
 }
+}
 
 .portfolio__item {
-    margin: 15px;
-    min-width: 370px;
-   
-    flex-basis: calc((100% - 120px) / 3);
-
     background: var(--style-fon-white);
     border: 1px solid var(--br-pr-style);
+
+    @media screen and (min-width:768px) {
+    margin: 15px;
+    flex-basis: calc((100% - 60px) / 2);
+}
+
+    @media screen and (min-width:1200px) {
+    flex-basis: calc((100% - 90px) / 3);
+}
+}
+
+.portfolio__item:not(:last-child) {
+    @media screen and (max-width:768px) {
+        margin-bottom: 30px;
+}
 }
 
 .portfolio__link {
-    display: inline-block;
-    cursor: pointer;
     text-decoration: none;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
 
     transition: box-shadow var(--animation);  
 }

@@ -39,7 +39,13 @@
     }
 
 .socials-footer {
+    @media screen and(max-width:1200px){
+    text-align: center;
+    }
+
+    @media screen and(min-width:1200px){
     margin-left: 70px;
+    }
 }
 
 .socials-footer_name {

@@ -15,10 +15,14 @@
     }
 
 .logo-footer {
-    display: block;
+    display: flex;
     margin: 0;
     padding: 0;
     margin-bottom: 20px;
+
+    @media screen and(max-width: 1200px){
+     justify-content: center;  
+    }
     }
     
 .logo--black {
