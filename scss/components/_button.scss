@@ -108,19 +108,51 @@
     }
 }
 
+
+
+
 .button-tel-menu {
     margin: 0;
     margin-left: auto;  
     padding: 0;
     border: 0;
 
+    cursor: pointer;
+
     background-color: transparent;
     fill: var(--style-basis);
+
+    transition: fill var(--animation);
+
+    &:hover,
+    &:focus {
+    fill: var(--style-blue);
+    }
+
+    &.icon-close {
+    opacity: 0;
+    }
+
+    &.is-open{
+    z-index: 800;
+    }
+
+    &.is-open .icon-close{
+     opacity: 1;
+    transition: opacity var(--animation);
+    }
+
+    &.is-open .icon-menu{
+    display: none;
+    } 
 
     @media screen and (min-width:768px) {
         display: none;;
      }
 }
+
+
+
 
 .button-tel-menu .icon-close {
     opacity: 0;

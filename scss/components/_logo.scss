@@ -1,7 +1,7 @@
 /* Логотип компанії */
 
 .logo {
-    margin-right: 93px;
+    margin-right: 88px;
     padding-top: 24px;
     padding-bottom: 24px;
   
@@ -12,6 +12,10 @@
     line-height: 1.19;
     letter-spacing: 0.03em;
     text-decoration: none;
+
+    @media screen and(min-width: 1200px){
+        margin-right: 93px;  
+       }
     }
 
 .logo-footer {
