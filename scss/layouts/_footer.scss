@@ -9,11 +9,12 @@
 } 
 
 .adrs-container{
-    // display: flex;
-    // justify-content: center;
+    display: flex;
+    justify-content: center;
     flex-direction: column;
 
     @media screen and (min-width:1200px) {
+
         flex-direction: row;
         align-items: baseline;
     }
@@ -36,6 +37,7 @@
 
 .adr-group{
     @media screen and (max-width:767px) {
+        justify-content: center;
        margin-bottom: 60px;
     }
 }
